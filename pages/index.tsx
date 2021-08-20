@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
 import Date from '../components/atoms/date'
 import Layout, {siteTitle} from '../components/layout'
 import utilStyles from '../components/utils.module.scss'
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData, PostData } from '../lib/posts'
 
-export default function Home({allPostsData}) {
+export default function Home({allPostsData} : {
+  allPostsData: PostData[]
+}) {
   return (
     <Layout home>
       <Head>
@@ -34,7 +37,7 @@ export default function Home({allPostsData}) {
                       <h4 className={utilStyles.listTitle}>{title}</h4>
                     </a>
                   </Link>
-                  <Date className={utilStyles.lightText} dateString={date} />
+                  <Date classes={utilStyles.lightText} dateString={date} />
                 </li>
               )
             )
@@ -45,7 +48,7 @@ export default function Home({allPostsData}) {
   )
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async context => {
   const allPostsData = getSortedPostsData();
   return {
     props: {

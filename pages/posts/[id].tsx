@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostIds, getPostData, PostData } from "../../lib/posts";
 import utilStyles from '../../components/utils.module.scss';
 import { parseISO, format } from 'date-fns';
 import Date from '../../components/atoms/date';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 
-export default function Post ({ postData }) {
-    return <Layout>
+export default function Post ({postData} : { postData: PostData }) {
+    return <Layout home={false}>
         <Head>
             <title>{postData.title} | timocles.com</title>
         </Head>
@@ -26,7 +27,7 @@ export default function Post ({ postData }) {
     </Layout>
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostIds();
 
     return {
@@ -35,8 +36,8 @@ export async function getStaticPaths() {
     }
 }
 
-export async function getStaticProps({ params }) {
-    const postData = await getPostData(params.id);
+export const getStaticProps: GetStaticProps =  async ({ params }) => {
+    const postData = await getPostData(params.id as string);
 
     return {
         props: {

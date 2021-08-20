@@ -5,7 +5,7 @@ import styles from './layout.module.scss'
 import utilStyles from './utils.module.scss'
 
 const name = "Timocles"
-export const siteTitle = "Next.js Sample Site"
+export const siteTitle = "Timocles' Playground"
 
 
 export default function Layout({children, home}) {
@@ -60,7 +60,7 @@ export default function Layout({children, home}) {
             {!home && (
                 <div className={styles.backToHome}>
                     <Link href="/">
-                        <a>Back to Home</a>
+                        <a>← Back to Home</a>
                     </Link>
                 </div>
             )}
