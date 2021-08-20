@@ -10,8 +10,8 @@ export type PostData = {
     id: string;
     title: string;
     date: string;
-    hero:  string;
-    heroAlt: string;
+    hero?:  string;
+    heroAlt?: string;
     contentHtml?: string;
 }
 
