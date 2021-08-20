@@ -14,17 +14,15 @@ export default function Home({allPostsData}) {
       <section className={utilStyles.headingMd}>
         <p>Hello there</p>
         <p>
-          I'm Tim, a FED that's learning Next.js
+          I'm Timocles, a FED from Melbourne, Australia. 
         </p>
         <p>
-          <Link href="/posts/first-post">
-            <a>Go to first post</a>
-          </Link>
+          There isn't much here but have a look around and enjoy what there is. 
         </p>
       </section>
       <section>
-        <h2 className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          Blog
+        <h2 className={`${utilStyles.headingMd} ${utilStyles.padTopX3}`}>
+          Posts
         </h2>
         <ul className={utilStyles.list}>
           {
@@ -33,10 +31,10 @@ export default function Home({allPostsData}) {
                 <li className={utilStyles.listItem} key={id}>
                   <Link href={`/posts/${id}`}>
                     <a>
-                      <h4 class={utilStyles.padTopx0}>{title}</h4>
+                      <h4 className={utilStyles.listTitle}>{title}</h4>
                     </a>
                   </Link>
-                  <Date classes={utilStyles.lightText} dateString={date} />
+                  <Date className={utilStyles.lightText} dateString={date} />
                 </li>
               )
             )

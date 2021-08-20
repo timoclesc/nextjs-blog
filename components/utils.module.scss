@@ -37,6 +37,18 @@
   padding-top: 1px;
 }
 
+.heroImageContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 57%;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -47,8 +59,17 @@
   margin: 0 0 1.25rem;
 }
 
+.listTitle {
+  margin: 0;
+  padding-top: 0;
+}
+
 .lightText {
   color: #666;
+}
+
+.block {
+  display: block;
 }
 
 @for $i from 0 to 10 {
@@ -61,5 +82,18 @@
   }
   .padBottomX#{$i} {
     padding-bottom: $i * 1rem;
+  }
+}
+
+@for $i from 0 to 10 {
+  .marginX#{$i} {
+    margin-top: $i * 1rem;
+    margin-bottom: $i * 1rem;
+  }
+  .marginTopX#{$i} {
+    margin-top: $i * 1rem;
+  }
+  .marginBottomX#{$i} {
+    margin-bottom: $i * 1rem;
   }
 }
