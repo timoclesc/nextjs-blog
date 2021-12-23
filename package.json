@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "source $HOME/.nvm/nvm.sh; nvm use",
+    "prebuild": "source $HOME/.nvm/nvm.sh; nvm use",
+    "prestart": "source $HOME/.nvm/nvm.sh; nvm use",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "wordpress": "wp-env"
   },
   "dependencies": {
+    "@animxyz/core": "^0.6.4",
+    "@animxyz/react": "^0.6.4",
+    "@geist-ui/react": "^2.2.0",
+    "@geist-ui/react-icons": "^1.0.1",
+    "@svgr/webpack": "^5.5.0",
     "date-fns": "^2.23.0",
     "gray-matter": "^4.0.3",
     "next": "^10.0.0",
@@ -19,6 +28,7 @@
   "devDependencies": {
     "@types/node": "^16.6.2",
     "@types/react": "^17.0.19",
+    "@wordpress/env": "^4.1.0",
     "sass": "^1.37.5",
     "typescript": "^4.3.5"
   }

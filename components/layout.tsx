@@ -1,10 +1,15 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import Image from 'next/image'
 import styles from './layout.module.scss'
 import utilStyles from './utils.module.scss'
+import Logo from './atoms/logo'
+import { BASE_COLOURS } from '../lib/constants'
+import { Github, Linkedin } from '@geist-ui/react-icons'
+import { Link, Spacer } from '@geist-ui/react'
 
 const name = "Timocles"
+const accentColor = BASE_COLOURS.plum;
 export const siteTitle = "Timocles' Playground"
 
 
@@ -29,19 +34,22 @@ export default function Layout({children, home}) {
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <Image 
+                        {/* <Image 
                             priority
                             src="/images/profile.jpg"
                             className={utilStyles.borderCircle}
                             height={144}
                             width={144}
                             alt={name}
-                        />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        /> */}
+                        <h1 className={utilStyles.heading2Xl}>
+                            <Logo mainColor="black" accentColor={accentColor} />
+                            {name}
+                        </h1>
                     </>
                 ) : (
                     <>
-                        <Link href="/">
+                        <NextLink href="/">
                             <a>
                                 <Image
                                     priority
@@ -52,18 +60,27 @@ export default function Layout({children, home}) {
                                     alt={name}
                                 />
                             </a>
-                        </Link>
+                        </NextLink>
                     </>
                 )}
             </header>
             <main>{children}</main>  
             {!home && (
                 <div className={styles.backToHome}>
-                    <Link href="/">
+                    <NextLink href="/">
                         <a>← Back to Home</a>
-                    </Link>
+                    </NextLink>
                 </div>
             )}
+            <footer className={styles.footer}>
+                <Link href="https:/github.com/timoclesc">
+                    <Github color={accentColor} size={32}/>  
+                </Link>
+                <Spacer h={.5} />
+                <Link href="https://www.linkedin.com/in/timocles-copland-262648b4">
+                    <Linkedin color={accentColor} size={32}/>  
+                </Link>
+            </footer>
         </div>
     )
 }

@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from "../../components/layout";
+import Layout from "components/layout";
 import { getAllPostIds, getPostData, PostData } from "../../lib/posts";
 import utilStyles from '../../components/utils.module.scss';
-import { parseISO, format } from 'date-fns';
 import Date from '../../components/atoms/date';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
@@ -14,7 +13,7 @@ export default function Post ({postData} : { postData: PostData }) {
             <title>{postData.title} | timocles.com</title>
         </Head>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <Date classes={`${utilStyles.lightText} ${utilStyles.marginBottomX2} ${utilStyles.block}`} dateString={postData.date} />
+        <Date additionalClasses={`${utilStyles.lightText} ${utilStyles.marginBottomX2} ${utilStyles.block}`} dateString={postData.date} />
         <div className={ utilStyles.heroImageContainer }>
             <Image
                 src={`/images/${postData.hero}`}

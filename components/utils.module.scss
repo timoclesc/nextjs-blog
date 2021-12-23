@@ -49,14 +49,29 @@
   object-fit: cover;
 }
 
-.list {
+.listItem {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  flex: 0 0 50%;
+  padding: 1rem;
+
+  &:before {
+    display: none;
+  }
 }
 
-.listItem {
-  margin: 0 0 1.25rem;
+.focus:focus {
+  outline: 2px solid #8A1325 !important;
+  outline-offset: 2px;
+}
+
+.flexList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  > * {
+    flex: 0 0 50%;
+  }
 }
 
 .listTitle {

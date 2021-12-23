@@ -1,0 +1,24 @@
+$size: 1.2rem;
+
+.checkbox { 
+    margin-right: 0.5rem;
+    height: $size;
+    width: $size;
+    vertical-align: middle;
+
+    &:focus {
+        outline: 2px solid #8A1325;
+        outline-offset: 2px;
+    }
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: block;
+    font-size: $size;
+    padding: 0.25rem 0.5rem 0.25rem 0;
+}
+
+.label {
+    vertical-align: middle;
+}
