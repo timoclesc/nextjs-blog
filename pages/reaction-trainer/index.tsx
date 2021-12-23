@@ -13,6 +13,7 @@ const audioPath = '/sounds/'
 
 const ReactionTrainer: React.FunctionComponent = function () {
     const [timer, setTimer] = useState(null);
+    const [isRepeat, setIsRepeat] = useState(false);
     const [minDelay, setMinDelay] = useState(initialDelay);
     const [maxDelay, setMaxDelay] = useState(initialDelay * 2);
     const [checkboxes, setCheckboxes] = useState(
@@ -27,6 +28,21 @@ const ReactionTrainer: React.FunctionComponent = function () {
 
     function handleClick(event:  React.MouseEvent<HTMLButtonElement>) {
         timer && clearTimeout(timer); 
+        triggerReaction(isRepeat);
+    }
+
+    function handleRepeat() {
+        const currentRepeat = isRepeat;
+        setIsRepeat(!currentRepeat);
+
+        if (currentRepeat) {
+            clearTimeout(timer);
+        } else {
+            triggerReaction(!currentRepeat);
+        }
+    }
+
+    function triggerReaction(repeat: boolean) {
         const delay = Math.floor((Math.random() * (maxDelay - minDelay) + minDelay) * 1000);
         const possibleOptions = getSelectedOptions();
         const index = Math.floor(Math.random() * possibleOptions.length);
@@ -38,6 +54,7 @@ const ReactionTrainer: React.FunctionComponent = function () {
                 setChoice(selectedChoice);
                 audio.play();
                 setTimer(null);
+                repeat && triggerReaction(repeat);
             }, delay
         ));
     }
@@ -88,14 +105,22 @@ const ReactionTrainer: React.FunctionComponent = function () {
             )}
         </div>
         <div className={utilStyles.marginBottomX1}>
-            <Button auto scale={2} onClick={handleClick} disabled={getSelectedOptions().length === 0 } className={utilStyles.focus}>Go!</Button>
+        <Grid.Container gap={1}>
+            <Grid>
+                <Button auto scale={2} onClick={handleClick} disabled={getSelectedOptions().length === 0 } className={utilStyles.focus}>Send it!</Button>
+            </Grid>
+            <Grid>
+                <Button auto scale={2} onClick={handleRepeat} disabled={getSelectedOptions().length === 0 } className={utilStyles.focus}>{isRepeat ? 'Stop' : 'Start'} Repeat</Button>
+            </Grid>
+        </Grid.Container>
         </div>
         <Spacer h={1} />
         <div>
             <h3>Instructions</h3>
             <p>This is a handy tool to introduce a reactive element to footwork drills.</p>
             <p>Use the checkboxes to a create a pool of options, then select the min and max time interval you'd like for a delay.</p>
-            <p>Click the button and a random option will be selected, displayed on screen, and spoken to you for an auditory queue.</p>
+            <p>Click the <em>Send It!</em> button and a random option will be selected, displayed on screen, and spoken to you for an auditory queue.</p>
+            <p>If you want this to be automatically repeated, click the <em>Start Repeat</em> button to have the queue fired over and over. Click it again to stop the repeat.</p>
         </div>
     </AppContainer>
 }
