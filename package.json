@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "predev": "source $HOME/.nvm/nvm.sh; nvm use",
-    "prebuild": "source $HOME/.nvm/nvm.sh; nvm use",
     "prestart": "source $HOME/.nvm/nvm.sh; nvm use",
     "dev": "next dev",
     "build": "next build",
