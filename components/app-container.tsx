@@ -4,7 +4,7 @@ import utilStyles from './utils.module.scss'
 import classnames from 'classnames'
 
 
-export default function AppContainer({children, home, background}: {children: Element[], home: boolean, background: string} ) {
+export default function AppContainer({children, home, background}: {children?: React.ReactChild, home: boolean, background?: string} ) {
     const cn = classnames( {
         [styles.container]: true,
         [styles.red]: background === 'red'
