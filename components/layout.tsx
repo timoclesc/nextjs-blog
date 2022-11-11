@@ -73,7 +73,7 @@ export default function Layout({children, home}) {
                 </div>
             )}
             <footer className={styles.footer}>
-                <Link href="https:/github.com/timoclesc">
+                <Link href="https://github.com/timoclesc">
                     <Github color={accentColor} size={32}/>  
                 </Link>
                 <Spacer h={.5} />
