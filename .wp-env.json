@@ -1,0 +1,14 @@
+{
+    "core": null,
+    "plugins": [
+        "https://downloads.wordpress.org/plugin/wordpress-importer.zip",
+        "https://downloads.wordpress.org/plugin/wp-graphql.zip",
+        "https://downloads.wordpress.org/plugin/headless-mode.zip",
+        "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+        "https://downloads.wordpress.org/plugin/custom-post-type-ui.zip",
+        "https://downloads.wordpress.org/plugin/custom-post-types.zip"
+    ],
+    "config": {
+        "HEADLESS_MODE_CLIENT_URL": "http://localhost:3000"
+    }
+}
