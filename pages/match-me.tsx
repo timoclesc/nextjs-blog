@@ -71,7 +71,6 @@ const MatchMe: React.FunctionComponent = function () {
     useEffect(
         () => {
             let prevAnswers = localStorage.getItem('answers');
-            console.log("🚀 ~ file: match-me.tsx ~ line 81 ~ prevAnswers", prevAnswers)
             prevAnswers && setAnswers(JSON.parse(prevAnswers));
         },
         []
@@ -118,7 +117,7 @@ const MatchMe: React.FunctionComponent = function () {
                 )}
             </Grid.Container>
         </form>
-        <Spacer h={1} />
+        <Spacer h={1} />gp
         <h2 className={utilStyles.headingMd} style={{textAlign: 'center'}}>Final Score: {getScore()}</h2>
         <Spacer h={5} />
         <Button type="warning" onClick={handleClear}>Clear</Button>
