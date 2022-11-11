@@ -4,7 +4,7 @@ import utilStyles from 'components/utils.module.scss';
 import Checkmark from 'components/atoms/checkmark';
 import Input from 'components/atoms/input'
 import { Button, Grid, Spacer } from '@geist-ui/react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const people: string[] = [
     'Angus',
@@ -35,11 +35,18 @@ const MatchMe: React.FunctionComponent = function () {
         people.reduce(
             (people, person, index) => ({
                 ...people,
-                [person]: index === 0
+                [person]: false
             }), {}
         ));
 
-    const [answers, setAnswers] = useState(people.map(() => ''));
+    const [answers, setAnswers] = useState(
+        people.reduce(
+            (people, person, index) => ({
+                ...people,
+                [person]: ''
+            }), {}
+        ));
+
 
     function handleCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
         const { name } = event.target;
@@ -52,17 +59,43 @@ const MatchMe: React.FunctionComponent = function () {
     }
 
     function handleAnswerChange(event: React.ChangeEvent<HTMLInputElement>) {
-        const { name } = event.target;
+        const { id } = event.target;
 
-        setCheckboxes(prevState => ({
+        setAnswers(prevState => ({
             ...prevState,
-            [name]: !prevState[name]
+            [id]: event.target.value
         }
         ));
     }
 
+    useEffect(
+        () => {
+            let prevAnswers = localStorage.getItem('answers');
+            console.log("🚀 ~ file: match-me.tsx ~ line 81 ~ prevAnswers", prevAnswers)
+            prevAnswers && setAnswers(JSON.parse(prevAnswers));
+        },
+        []
+    );
+
+    useEffect(
+        () => {
+            localStorage.setItem('answers', JSON.stringify(answers))
+        },
+        [answers]
+    );
+
     function getScore() {
         return people.filter(person => checkboxes[person]).length;
+    }
+
+    function handleClear () {
+        setAnswers(
+            () =>  people.reduce(
+                (people, person, index) => ({
+                    ...people,
+                    [person]: ''
+                }), {}
+        ));
     }
 
     return <AppContainer home={false}>
@@ -70,22 +103,25 @@ const MatchMe: React.FunctionComponent = function () {
             <title>Match Me | timocles.com</title>
         </Head>
         <h1 className={utilStyles.headingLg}>Match Me</h1>
-        <Grid.Container gap={1}>
-            {people.map( 
-                person => (
-                    <React.Fragment key={person}>
-                        <Grid xs={24} width="100%">
-                            <Input label={person} onChange={handleAnswerChange} value={answers[person]} type="text" />
-                            <Spacer h={.5} />
-                            <Checkmark value={person} label={person} isChecked={checkboxes[person]} onChange={handleCheckboxChange} key={person} />
-                        </Grid>
-                    </React.Fragment>
-                )
-            )}
-        </Grid.Container>
-        <Spacer h={.5} />
-            <h2 className={utilStyles.headingMd} style={{textAlign: 'center'}}>Final Score: {getScore()}</h2>
+        <form>
+            <Grid.Container gap={1}>
+                {people.map( 
+                    person => (
+                        <React.Fragment key={person}>
+                            <Grid xs={24} width="100%">
+                                <Input label={person} onChange={handleAnswerChange} value={answers[person]} type="text" />
+                                <Spacer w={.5} />
+                                <Checkmark value={person} label={person} isChecked={checkboxes[person]} onChange={handleCheckboxChange} key={person} />
+                            </Grid>
+                        </React.Fragment>
+                    )
+                )}
+            </Grid.Container>
+        </form>
         <Spacer h={1} />
+        <h2 className={utilStyles.headingMd} style={{textAlign: 'center'}}>Final Score: {getScore()}</h2>
+        <Spacer h={5} />
+        <Button type="warning" onClick={handleClear}>Clear</Button>
 
     </AppContainer>
 }
