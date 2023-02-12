@@ -9,7 +9,21 @@
     padding: 1rem;
 }
 
-.red { 
+.red {
     background: lighten(#d00000, 55%);
     border: dashed 3px green;
+}
+
+.pink {
+    background-color: lighten(#ff9ff3, 15%);
+    background: url(/tile_background.png);
+    border: none;
+}
+
+.fullWidth {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
 }

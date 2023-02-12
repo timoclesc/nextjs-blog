@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import styles from './app-container.module.scss'
-import utilStyles from './utils.module.scss'
 import classnames from 'classnames'
 
 
-export default function AppContainer({children, home, background}: {children?: React.ReactChild[] | React.ReactChild, home: boolean, background?: string} ) {
+export default function AppContainer({children, home, background, fullWidth = false}: {children?: React.ReactChild[] | React.ReactChild, home: boolean, background?: string, fullWidth?: boolean} ) {
     const cn = classnames( {
         [styles.container]: true,
-        [styles.red]: background === 'red'
+        [styles.red]: background === 'red',
+        [styles.pink]: background === 'pink',
+        [styles.fullWidth]: fullWidth,
     });
     return (
         <div className={cn}>

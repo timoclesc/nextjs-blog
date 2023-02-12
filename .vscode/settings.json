@@ -28,4 +28,5 @@
         "!Split",
         "!Split sequence"
     ]
+    "editor.formatOnSave": true
 }
