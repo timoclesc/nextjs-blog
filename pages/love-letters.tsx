@@ -3,6 +3,7 @@ import AppContainer from 'components/app-container';
 import utilStyles from 'components/utils.module.scss';
 import loveLetterStyles from 'components/love-letter.module.scss';
 import React, { useState } from 'react';
+import classNames from 'classnames';
 
 const letters = {
     "Ashley O'Sullivan": [
@@ -190,39 +191,51 @@ const users = {
 };
 
 const LoveLetters: React.FunctionComponent = function () {
+    const [isLoading, setIsLoading] = useState(false);
     const [user, setUser] = useState('');
 
     const handleInput = (e) => {
-        Object.hasOwn(users, e.target.value) && setUser(users[e.target.value]);
-    };
+        if (Object.hasOwn(users, e.target.value)) {
 
+            setIsLoading(true);
+            setTimeout(
+                () => {
+                    setUser(users[e.target.value]);
+                    setIsLoading(false);
+                },
+                2000
+            );
+        }
+    };
 
     return <AppContainer home={false} background={'pink'} fullWidth={true}>
         <Head>
             <title>Lippy Love Letters | timocles.com</title>
         </Head>
-        <div className={loveLetterStyles.container}>
+        <div className={classNames(loveLetterStyles.container, { [loveLetterStyles.isLoading]: isLoading })}>
             <h1 className={loveLetterStyles.title}>Happy Valentines!</h1>
-            {
-                user ?
-                    <>
-                        {letters[user].map(
-                            (letter, index) => (<div key={letter} className={loveLetterStyles.letter}>
-                                {letter}
-                            </div>)
-                        )}
-                    </>
-                    :
-                    <>
-                        <div className={loveLetterStyles.letters}>
-                            <p>There is something undeniably romantic about the written word, especially when it comes to love letters written by your dear teammates.</p>
-                            <p>Put in your unique password below to receive some sickly sweet words.</p>
-                        </div>
-                        <div className={loveLetterStyles.inputRow}>
-                            <label htmlFor="password" className={loveLetterStyles.label}>Password:</label><input id="password" className={loveLetterStyles.input} onChange={handleInput} />
-                        </div>
-                    </>
-            }
+            <div className={isLoading && loveLetterStyles.outer}>
+                {
+                    user ?
+                        <>
+                            {letters[user].map(
+                                (letter) => (<div key={letter} className={loveLetterStyles.letter}>
+                                    {letter}
+                                </div>)
+                            )}
+                        </>
+                        :
+                        <>
+                            <div className={loveLetterStyles.letters}>
+                                <p>There is something undeniably romantic about the written word, especially when it comes to love letters written by your dear teammates.</p>
+                                <p>Put in your unique password below to receive some sickly sweet words.</p>
+                            </div>
+                            <div className={loveLetterStyles.inputRow}>
+                                <label htmlFor="password" className={loveLetterStyles.label}>Password:</label><input id="password" className={loveLetterStyles.input} onChange={handleInput} />
+                            </div>
+                        </>
+                }
+            </div>
         </div>
     </AppContainer >
 }

@@ -40,3 +40,38 @@
     background: ivory;
     margin-block-end: 2rem;
 }
+
+.isLoading {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '🥰';
+        font-size: 3rem;
+        top: 50%;
+        left: 50%;
+        animation: loader 1s infinite;
+    }
+
+    div,
+    p,
+    label {
+        opacity: 0;
+    }
+
+    .letter {
+        display: none;
+    }
+}
+
+@keyframes loader {
+
+    0%,
+    100% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+}
