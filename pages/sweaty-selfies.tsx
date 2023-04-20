@@ -73,58 +73,15 @@ const SweatySelfies: React.FunctionComponent = function () {
             }
             {
                 selectedImage ?
-                    <img src={`/images/sweaty-selfies/${selectedImage}`} className={styles.modalImage} onClick={() => setSelectedImage('')} />
+                    <>
+                        <div className={styles.modalLoader}>
+                            <div className={styles.loader}></div></div>
+                        <img src={`/images/sweaty-selfies/${selectedImage}`} className={styles.modalImage} onClick={() => setSelectedImage('')} />
+                    </>
                     :
                     <></>
             }
         </div>
-        <svg className={styles.svg}>
-            <defs>
-                <clipPath id="clipping">
-                    <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185" />
-                </clipPath>
-
-                <clipPath id="clipping-with-text">
-                    <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185" />
-                    <text x="0" y="3.2em">Text</text>
-                </clipPath>
-
-                <linearGradient id="gradient" x1="0" y1="0" x2="110%" y2="0%">
-                    <stop stopColor="#fff" offset="0" /><stop stopColor="#fff" offset="10%" />
-                    <stop stopColor="#AAA" offset="10%" /><stop stopColor="#AAA" offset="20%" />
-                    <stop stopColor="#777" offset="20%" /><stop stopColor="#777" offset="30%" />
-                    <stop stopColor="#333" offset="30%" /><stop stopColor="#333" offset="40%" />
-                    <stop stopColor="#000" offset="40%" /><stop stopColor="#000" offset="50%" />
-                    <stop stopColor="#fff" offset="50%" /><stop stopColor="#fff" offset="60%" />
-                    <stop stopColor="#AAA" offset="60%" /><stop stopColor="#AAA" offset="70%" />
-                    <stop stopColor="#777" offset="70%" /><stop stopColor="#777" offset="80%" />
-                    <stop stopColor="#333" offset="80%" /><stop stopColor="#333" offset="90%" />
-                    <stop stopColor="#000" offset="90%" /><stop stopColor="#000" offset="100%" />
-                </linearGradient>
-
-                <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-                    <rect y="0" width="1" height="1" fill="url(#gradient)" />
-                    <circle cx=".5" cy=".5" r=".42" fill="black" />
-
-                    <circle cx="0" cy=".5" r=".32" fill="black" />
-                    <circle cx="1" cy=".5" r=".32" fill="black" />
-
-                    <circle cx="0" cy=".5" r=".3" fill="gray" />
-                    <circle cx=".5" cy=".5" r=".4" fill="gray" />
-                    <circle cx="1" cy=".5" r=".3" fill="gray" />
-
-                    <circle cx="0" cy=".5" r=".25" fill="white" />
-                    <circle cx=".5" cy=".5" r=".35" fill="white" />
-                    <circle cx="1" cy=".5" r=".25" fill="white" />
-                </mask>
-
-                <pattern id="pattern"
-                    patternUnits="userSpaceOnUse"
-                    width="200" height="300"
-                    viewBox="0 0 200 300">
-                </pattern>
-            </defs>
-        </svg>
     </AppContainer >
 }
 
