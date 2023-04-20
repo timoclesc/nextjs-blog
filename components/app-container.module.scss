@@ -9,6 +9,13 @@
     padding: 1rem;
 }
 
+.fullWidth {
+    max-width: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .red {
     background: lighten(#d00000, 55%);
     border: dashed 3px green;
@@ -20,9 +27,14 @@
     border: none;
 }
 
-.fullWidth {
-    max-width: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.white {
+    background: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+
+    main {
+        height: 100vh;
+    }
 }

@@ -3,11 +3,12 @@ import styles from './app-container.module.scss'
 import classnames from 'classnames'
 
 
-export default function AppContainer({children, home, background, fullWidth = false}: {children?: React.ReactChild[] | React.ReactChild, home: boolean, background?: string, fullWidth?: boolean} ) {
-    const cn = classnames( {
+export default function AppContainer({ children, home, background, fullWidth = false }: { children?: React.ReactChild[] | React.ReactChild, home: boolean, background?: string, fullWidth?: boolean }) {
+    const cn = classnames({
         [styles.container]: true,
         [styles.red]: background === 'red',
         [styles.pink]: background === 'pink',
+        [styles.white]: background === 'white',
         [styles.fullWidth]: fullWidth,
     });
     return (
@@ -15,17 +16,17 @@ export default function AppContainer({children, home, background, fullWidth = fa
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
-                name="description"
-                content=""
+                    name="description"
+                    content=""
                 />
                 <meta
-                property="og:image"
-                content=""
+                    property="og:image"
+                    content=""
                 />
                 <meta name="og:title" content="Reaction Traininer" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <main>{children}</main>  
+            <main>{children}</main>
         </div>
     )
 }
