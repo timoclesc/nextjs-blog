@@ -23,7 +23,7 @@ export default function AppContainer({ children, home, background, fullWidth = f
                     property="og:image"
                     content=""
                 />
-                <meta name="og:title" content="Reaction Traininer" />
+                <meta name="og:title" content="Timocles' Playground" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <main>{children}</main>
