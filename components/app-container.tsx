@@ -9,6 +9,7 @@ export default function AppContainer({ children, home, background, fullWidth = f
         [styles.red]: background === 'red',
         [styles.pink]: background === 'pink',
         [styles.white]: background === 'white',
+        [styles.fish]: background === 'fish',
         [styles.fullWidth]: fullWidth,
     });
     return (
