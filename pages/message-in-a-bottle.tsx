@@ -29,6 +29,7 @@ const oldLetters = {
         "Alice, my love!! 💗💗💗 I know that this year has been a tough one but I am so grateful we get to have this experience together. You are such and amazing player and athelete and I can't wait to watch you tear it up on the world stage. Find me whenever you need. Love you 🫶 ~ Bubbs"
     ],
     "Ash McInnes": [
+        "Hey SplAsh McFins. I appreciate your friendship and am excited to get another mundis campaign w you, you are such a womanboss on and off the field. Love Alice.  ~ ",
         "So pleased you made it onto the team! I love matching up against you, whether that was at women's or selections. Excited to play on the same team together!  ~ Bex",
         "☺️ ~ ",
         "I loved playing with you last time and I'm sure this will be no different. You're amazing, I can't wait for this one! ~ Peel",
@@ -96,6 +97,8 @@ const oldLetters = {
         "Ben!! Thank you for the commitment and drive that you bring to this team. I can't wait to see you get massive blocks on the best players in the world. Let's get it 🚀 🐧 ~ Bubbs"
     ],
     "Bex Palmer": [
+        "Hey Bex, super excited to play with you and not a against you on the field, sad we didn't get to do boracay together in the end (I couldn't get the leave off work either 😭) but excited for this mundis campaign and getting to know you! Alice x ~ ",
+        "Such a fast explosivw dynamic player 🤩 ~ Kev",
         "🙌🙌 ~ ",
         "Hey Bex! I am really excited to play with you. I've heard and seen so many good things so it will be awesome to spend some time hanging and playing together.  ~ Peel",
         "Looking forward to sharing your laughter off the field, and game-time intensity and focus on the field. Definitely a leading contender for 'Best Brit' on the team! ~ Zac",
@@ -118,6 +121,8 @@ const oldLetters = {
         "Bex!! The dream is realised and we are now mundis together 🎉🎉!! I am so grateful that you moved to Australia and we've had the opportunity to play together on multiple teams and become friends. I absolutely cannot wait to see you get massive blocks on the best players in the world - also grateful that won't be me!! Love you 💕 ~ Bubbs"
     ],
     "Chris Stoddard": [
+        "Your run times still astound me. Keeeen for another campaign with you! Xoxo Alice ~ ",
+        "King ~ Kev",
         "Really great to meet and play with you a bit at selections. Very excited to get to know you more and take the field with you. ~ Bex",
         "Fitspo ~ ",
         "I love that our last facebook message was excitement for the 2020 campaign haha. Its really nice that we get to play together in this one given the last one was taken away from us. I think you're such an amazing player and I am really happy that you are on my team. Lefty+Peely is some downfield combo! ~ Peel",
@@ -140,6 +145,7 @@ const oldLetters = {
         "Lefty!! I can't wait to be on the field with you again. I absolutely love our connection and the energy and focus you bring to the team. Let's do this 🚀🚀  ~ Bubbs"
     ],
     "Clare Barcham": [
+        "Clancey!!! Thanks for being a good friend and teammate, so excited to do another campaign with you! Alice x ~ ",
         "Always have a smile on your face. You are very approachable and easy to have a conversation with whether that is about life or Frisbee. Excited to get to play on another team together :)  ~ Bex",
         "Thank you for reaching out! Keen to get to know you more as the campaign goes :) ~ ",
         "I'm really looking forward to playing with you Clare. I don't think we've ever played together (or against each other?) before.  ~ Peel",
@@ -162,6 +168,7 @@ const oldLetters = {
         "My lovely, Clancey!! 💗💗 Thank you for being my person these past few years. I am so incredibly grateful for your love and friendship and couldn't be more excited for this next adventure together. You are an absolute BOSS on the field, and I can't wait to see you get blocks on other people who are not me :). Love you 🫶 ~ Bubbs"
     ],
     "Dennis Tran": [
+        "Hey D Tran I'm excited for another mundis experience w you, you're an amazing player and have loved watching you get massive Ds w the Gurr line xo Alice ~ ",
         "Really great to play with you a bit at selections. Very excited to get to know you more and take the field with you. ~ Bex",
         "You’re one of the funniest and unfiltered person I know haha ~ ",
         "I'm stoked we get to play together. I love your attitude and I feel like you and I are gonna shred. ~ Peel",
@@ -184,6 +191,7 @@ const oldLetters = {
         "Dennis!! I am very excited to see you boss it on the world stage! Very grateful for the dedication and care that you bring to this team. Let's do this 💪 ~ Bubbs"
     ],
     "Dorothy Li": [
+        "Hey Dot, I don't know you particularly well (yet) but it's been real getting snippets of your life on BeReal 😂 excited get to know you as both a person and a player very well in the upcoming year!\nAlice x ~ ",
         "You make playing Frisbee look effortless, excited to be teammates for this campaign ~ Bex",
         "Such an athlete and really sweet person. Keen to get to know you more as the campaign progresses ~ ",
         "I am most excited to play with you this campaign. It's been so good getting to know you and hang out over the last couple of years. I think you're a legend. I know mundies wasn't your first pref as well so I'm determined to make it the best campaign ever for you!  ~ Peel",
@@ -207,6 +215,8 @@ const oldLetters = {
         "Dot! I have a feeling that playing with you is going to be so much better than playing against you! I've been so impressed by your growth from afar, and I am very excited to to see you boss it up on the worlds stage!! Let's do this 💪💗 ~ Bubbs"
     ],
     "Ferdy Rahmadhan": [
+        "YEAAAAH FERDY LFG. Can't wait to kill it on the world stage with you. Stay juicy 🍑\nAlice ~ ",
+        "My Indonesian twin ~ Kev",
         "Don't think we have met yet! Excited to get to know you and play with you through this campaign. ~ Bex",
         "🦝🦝 ~ ",
         "I was shocked you weren't picked on the dingoes. I'm really happy we get to do this campaign together because I think you're an amazing player. Looking forward to watch you shred my man. ~ Peel",
@@ -228,6 +238,7 @@ const oldLetters = {
         "Hello Ferdy! So I'm not sure if we have every had a chat but I did see a highlight of you getting a fat block at AOUGC and would love to see that in real life. I can't wait! Let's go get it! 🚀  ~ Bubbs"
     ],
     "Fisher Day": [
+        "Hey Fisher, excited to get to know you and play with you :) Alice ~ ",
         "Loved meeting and playing with you at selections. Very excited to take the field with you. ~ Bex",
         "Welcome back to fris!! My only recollection of playing against each other was in 2018 U22s and I think you were one of the best players I’ve seen that time! ~ ",
         "I'm so so glad we get to play together again! You are such a wonderful person, I'm looking forward to hanging out together off the field, and hoping we get to play together on the field. You are already a super star, and I look forward to seeing you grow over the campaign and burn brightest come September.  ~ Zac",
@@ -248,6 +259,8 @@ const oldLetters = {
         "Fish! I am so excited to play together again - wow it's been a long time since VLS. Looking forward to seeing you crush it on the field with a big smile. Let's get it! ~ Bubbs"
     ],
     "Holly Reeve": [
+        "Hol <3 love you and love playing with you. Xoxoxoxoxo Alice ~ ",
+        "Queen ~ Kev",
         "Very talented on O or D, you will be a menace to the any other team. Excited to play on the same team for this campaign!  ~ Bex",
         "Your disc control and aggressiveness on field is so unmatched it’s so crazy ~ ",
         "I'm stoked we get to play together Holly. I think we're gonna shred.  ~ Peel",
@@ -269,6 +282,7 @@ const oldLetters = {
         "Holly, my love!! I feel so priveledged to get to go on another adventure with you. You bring a smile to my face every single time. You are a force on the field and I feel so lucky to call you my friend and teammate 💕. Let's do this 💪 ~ Bubbs"
     ],
     "John McNaughton": [
+        "Speedy recovery JMac, can't wait for you to be playing with us again! x Alice ~ ",
         "Was great chatting with you at selections and I'm excited to get to take the field with you, fingers crossed the knee continues it's recovery! ~ Bex",
         "Never really got to play with or against you much, but I have heard and watched all the amazing things you’ve done on field!! ~ ",
         "I'm looking forward to another big campaign together bro. I deeply respect your experience, knowledge and passion for our game. I was gutted about your injury to start the season but I can't wait to see you get back to top form.  ~ Peel",
@@ -291,6 +305,8 @@ const oldLetters = {
         "JMac! Thank you for all of your support, especially after my injury in Manila. I know that things feel tough at the moment but I am confident that you will get through it. Take things at your pace for now, and I know that you are going to tear it up in September! 💪 ~ Bubbs"
     ],
     "Kaede Yoshida": [
+        "Hey Kaede, you are an absolutely phenomenal player and can't wait to kill it on the world stage with you this year x Alice ~ ",
+        "I really hope we're on the same line! ~ Kev",
         "Haven't had much time to chat but, excited to get to know you more over the campaign! ~ Bex",
         "Layout queen with crazy flick pulls  ~ ",
         "Hi Kaede, you are a really amazing player. I am extremely glad that I get to play with you this year. I feel proud to be on the same team as you.  ~ Peel",
@@ -313,6 +329,8 @@ const oldLetters = {
         "Hey hey Kaede!! I am so exciting to play with you again. I am looking forward to getting closer to you and continuing to see you ball out on the field. Let's get it  💪💪 ~ Bubbs"
     ],
     "Kevin Dang": [
+        "Hey KDang LFG. Lets bring our connection from the first training camp of the last campaign through to this one 🤣 you're a delight to play with. X alice  ~ ",
+        "xD ~ Kev",
         "Well we had our first mixed outing with Gong, what could go wrong now? Very excited to take the field with you!  ~ Bex",
         "Love your intensity every time you get on field ~ ",
         "Looking forward to playing together mate!  ~ Peel",
@@ -334,6 +352,8 @@ const oldLetters = {
         "KDang! It was incredible to see your growth in the last campaign and I'm very excited to see you crush it on the world stage. Let's get it 💪 ~ Bubbs"
     ],
     "Madeleine Owens": [
+        "Hey Maddie :) it was so fun getting to know you and playing with you on the Gurr line at AOU! Can't wait to see us grow and reach new heights for WUC <3 Alice ~ ",
+        "Excited to see where you can take your game to. ~ Kev",
         "Such a big energy on field, you put so much thought into how you are playing and I think that dedication will continue to improve your play over the year. I can't wait to play Rogue and Mundis with you :)  ~ Bex",
         "👐👐 ~ ",
         "Slay, Slay, Slay, Slay ,Slay. #Slay\n\nBut seriously, you just slay. It's been amazing to see your take on everything you learnt from your U24s campaign and develop into a great frisbee player. I love the energy you bring, your fierce determination combined with your fun side. Looking forward to sharing another campaign together. ~ Zac",
@@ -354,6 +374,8 @@ const oldLetters = {
         "Maddie! It's been so amazing to see your growth as a player these past few years. Thanks for stepping up big for me in Manila and absolutely crushing it. Can't wait to see your next level on the world stage!! Love you 💕 ~ Bubbs"
     ],
     "Max Halden": [
+        "Hello Maximillian, you're one in 8 billion. I'm impressed at your brilliance (on the field) and that even after a big run set, your face is not vermilion. \nOk but rhyming aside, your fakes are excellent and I've been practising changing grips a lot since our run/throw in Sydney. Also I wish to emulate you in a zone offence. Excited for this campaign with you.\nAlice x ~ ",
+        "Ur a mad captain ~ Kev",
         "Loved your energy at selections and I'm excited to play alongside you on this campaign. ~ Bex",
         "Contagious energy and fun! ~ ",
         "This marks 16 years of playing worlds campaigns together. Isn't that insane. I genuinely think you are one of (if not the number 1) hardest players to mark. I love being your teammate at Lippy. I can't wait to do Mundies together. ILY brother.  ~ Peel",
@@ -377,6 +399,8 @@ const oldLetters = {
         "Max!! You are a gem of a person and it's been incredible to see the player you've become over the past couple of years. I literally can't think of anything more fun than dishing a fris around the field with you. Thank you for your dedication, leadership and the thoughtfulness that you bring to every individual and the team as a whole. Let's take on the world!! 🫶 ~ Bubbs"
     ],
     "Michaela Dunmall": [
+        "Hey mik, you're a really fucking great player and can't wait to see you sky sone bitches xoxo Alice ~ ",
+        "Friends again? 🥺 ~ Kev",
         "Loved meeting you at selections. I felt like I really clicked with you on pitch and I can't wait to see how you and I work on the D line together (not that we couldn't play O, but let's be real ;) ) ~ Bex",
         "Super athletic  ~ ",
         "You're such a pleasure to be around, and an amazing frisbee player to boot. I had a great time during the lead up and in Manilla with you last year. I look forward to sharing another campaign with you, and watching you grow from strength to strength.  ~ Zac",
@@ -397,6 +421,7 @@ const oldLetters = {
         "Mikki! My Manila roomie 🫶. You are an absoutely incrdible player and beast of an athlete. I am also so grateful for your friendship and energy that you bring to this team. You were my saviour in Manila and I am so appreciative of you. Can't wait for this next adventure!! (No broken bones please for either of us..)  💪 ~ Bubbs"
     ],
     "Michelle Phillips": [
+        "Hey Mish, love your running progression updates, you're amazing. X alice ~ ",
         "Haven't had much time to chat yet but, very excited to take the field with you. ~ Bex",
         "Ultimate legend ❤️ ~ ",
         "Can't wait to be teammates and do a big campaign together. It's really nice that we get to play together finally!  ~ Peel",
@@ -420,6 +445,7 @@ const oldLetters = {
         "Mish! We are finally teammates 🎉🎉. Really excited for this experience with you. I am grateful for your dedication to every individual and leadership. You are also such a force on the field and inspiring example of mothers competing at the highest level. Thank you for being an example for our community. Can't wait to do this together 💕 ~ Bubbs"
     ],
     "Peter Eley": [
+        "Hey Peel, just happy to have the opportunity to play with you again, you're such a great player, and so dedicated to the sport! x Alice ~ ",
         "Not played together before but, very excited to be teammates for this campaign.  ~ Bex",
         "Really enjoy our chats and always great and easy to work with you on field!! ~ ",
         "I'm very excited to share a campaign with you! We've spent far too long playing against each other, I'm glad we get a chance to play together. I'm looking forward to getting to know you better and learning from you. ~ Zac",
@@ -441,6 +467,8 @@ const oldLetters = {
         "Pete!! We finally get to play together! Your drive is inspiring and I am grateful for the leadership and energy that you are already bringing to this team. I absolutely cannot wait to see you boss it up on the field. So ready for this experience - let's get it 💪💪 ~ Bubbs"
     ],
     "Ryan Davey": [
+        "Hey, I don't know you very well yet but I'm keen to get to know you :) So far I know you're a great thrower so excited to make connections with you!\nAlice ~ ",
+        "Lfg. Keen to learn from u ~ Kev",
         "Really great to play with you a bit at selections. Very excited to get to know you more and take the field with you. ~ Bex",
         "One of the most grounded person I know in the ultimate community. Your knowledge of the game is quite unrivalled!! ~ ",
         "Hey Davey. It would feel weird to do an Aussie campaign without you so I'm really glad we're doing another one together. You're such a strong competitor and athlete. I respect you heaps and love playing with you. I'm proud to take the field with you. I'm also glad you make me seem a little bit younger so that's nice too.  ~ Peel",
@@ -463,6 +491,7 @@ const oldLetters = {
         "Hello!! I am so excited to finally play with you! Everytime your name comes up, everyone says - oh you will LOVE playing with Davey! I am so confident that will come true. Let's get it 💪 ~ Bubbs"
     ],
     "Sarah Brereton": [
+        "B <3 so happy we get another campaign together! Can't wait for the year ahead 💪🏻\nAlice ~ ",
         "Loved playing with you at selections, you were very easy to click with and I think your calm decision making will be a great asset. ~ Bex",
         "👏👏 ~ ",
         "Playing together after all of this time is really exciting. It must be like 13 years or so since last time? Anyway, I think you're great. You should put your hand up to be captain.   ~ Peel",
@@ -484,6 +513,8 @@ const oldLetters = {
         "B! It's been an absolute pleasure being your teammate over this past year. Thank you for being so supportive and thoughtful always. You are an incredible leader for this team and relaible force on the field. Can't wait to take on the world! ~ Bubbs"
     ],
     "Shannon Bubb": [
+        "BUBBS <3 Love you and excited to do this campaign with you!!!! Alice x ~ ",
+        "Lfggg ~ Kev",
         "You put so much energy into being at the top of your game and it's very admirable how you have continued to push yourself throughout a lot of tough moments. I can't wait to play Rogue and Mundis with you :)  ~ Bex",
         "I have only watched you play when you were on the Adelaide Dragons I believe and you’re amazingly good!! ~ ",
         "I'm excited to play with you Bubbs! I've long admired the way you play and the way you go about things.   ~ Peel",
@@ -505,6 +536,7 @@ const oldLetters = {
         "Bigger and better baby! This was always the endgame, and you're so ready. Let it rip and play big: This Is Your Year.  ~ "
     ],
     "Timocles Copland": [
+        "Timo, I appreciate so much what you give to the Barramundis, excited for another campaign with you!!! <3 Alice ~ ",
         "Really great to meet and play with you at selections, felt I clicked with you very easily on pitch. Very excited to get to know you more and take the field with you. ~ Bex",
         "😎😎😎 ~ ",
         "You're one of my favourite teammates. Actually you're one of my favourite people. Perth Power, Ellipsis, Crocs @home, now this. LFG. ~ Peel",
@@ -528,6 +560,7 @@ const oldLetters = {
         "Tim!! I absolutely love the leadership and energy that you bring to this team. I feel like you bring so much dedication while being incredibly thoughtful. So excited to take on the world with you 🚀🚀 ~ Bubbs"
     ],
     "Ynez Ruiz": [
+        "<3 you're such a gun at handler defense and I love playing with you, can't wait to kill it on the world stage together! XxxAlice ~ ",
         "Love playing Rogue with you, your a great cutter and I can't wait to get your calmness and energy in the women's season and then mixed after! ~ Bex",
         "Speeeedyyyyy ~ ",
         "Hey Ynez! You're one of the people I'm most excited to play with this year. I've watched you play heaps and I think you're great. I'm also excited to get to know you more cos we've never really hung out.  ~ Peel",
@@ -551,6 +584,8 @@ const oldLetters = {
         "Nezzy!! Wow it's been amazing to play with you on so many teams now and watch the player you've become. Thank you for being the stickiest defender I know and a great friend. Love you 💕 ~ Bubbs"
     ],
     "Zac Chodos": [
+        "Hey chodos, you are a very genuine and kind person and so great at mixed frisbee and it's been an absolute blast everytime playing with you and I'm so excited to do this campaign with you x\nAlice ~ ",
+        "👑 ~ Kev",
         "Love your calmness and positivity on and off the pitch. Can't wait to take the field with you. ~ Bex",
         "Don’t know how you’re so fast all the time. When I think of The Flash I think about you lol. ~ ",
         "I can't wait to play with you Zac. I remember watching you with Lunchbox and I have been so impressed. This is gonna be great. ~ Peel",
@@ -573,6 +608,8 @@ const oldLetters = {
         "Zac! How good is it that we get to play together again??! It's been amazing to see the player you've become over the past few years. I feel so incredibly confident whenever we get to step on the field together. I have so much love for you, friend, and feel so grateful for this next experience and adventure. let's gooo 💪💗 ~ Bubbs"
     ],
     "Bree Edgar": [
+        "Hey Bree, you're an excellent head coach and excited for you to lead us to victory this year 🤩\nAlice ~ ",
+        "Lesssgedit ~ Kev",
         "Very much appreciate all the time and effort you will no doubt be putting into this season. Thank you, I will try and remember to say it often throughout the year! Excited to be coached by you for this campaign. ~ Bex",
         "Thank you for putting your trust in us as a squad! Would love to get to know you more as the campaign goes :) ~ ",
         "Thanks for taking a chance on me! I'm can't wait to get into this campaign and take on the world. ~ Peel",
@@ -593,6 +630,7 @@ const oldLetters = {
         "My lovely, Bree!! 💗💗💗 Thank you for being the leader and human that you are. We've done so much together already and I can't wait for this amazing adventure ahead. Thank you for bringing such support and strength to my life always. I feel so lucky to have you in my corner. Let's do this 💪💪 ~ Bubbs"
     ],
     "Paul Denyer": [
+        "Hey Denz! Excited for another campaign with you, especially one where you can actually be at the tournament haha. Keen to learn more defensive stuff from you. \nx Alice  ~ ",
         "Haven't had much time to chat but, super excited to work with you throughout this season! ~ Bex",
         "Thank you for putting your trust in us as a squad! Would love to get to know you more as the campaign goes 🤠 ~ ",
         "I wouldn't be playing on the mundies if it wasn't for you. Stoked to do another campaign together, maybe this is our last one?  ~ Peel",
@@ -614,6 +652,7 @@ const oldLetters = {
         "Dens! I am so grateful that you are a part of this adventure! Thank you for being so present for us all. I really appreciated the feedback during the last campaign and how present you were throughout, especially at Sydney pods. Looking forward to taking on the world 🚀  ~ Bubbs"
     ],
     "Liam Varley": [
+        "Love how cool calm and collected you are when giving us instructions on the line, and you always give us all the info we need very efficiently too. Can't wait to continue working with you throughout this campaign! x Alice ~ ",
         "Very approachable and easy to have a conversation with about Frisbee or life.  Excited to see you slot into the role of coach over the course of the campaign. ~ Bex",
         "Love your work and extreme analytical thinking :) ~ ",
         "I was really happy when I saw your name as the new assistant coach. I've known you a long time, and I respect the way you go about things. I'm really excited to do a campaign together! ~ Peel",
@@ -637,6 +676,8 @@ const oldLetters = {
         "Varls! Thank you for coming on this adventure with us! I can already tell how dedicated you are to this team. We are so grateful for you 🫶 ~ Bubbs"
     ],
     "Bruce Huynh": [
+        "Hey 🐐, keep being the best manager ever xoxo Alice ~ ",
+        "Ma boii  ~ Kev",
         "It was great to meet you at selections, I really appreciated how helpful you were over the weekends. Sure you will be an organization mastermind for this team :) ~ Bex",
         "Love what you do and enjoyed our little chats about work and food! ~ ",
         "What a joy to have you lead us on another campaign. Your generosity and spirit are always inspiring and I am very much looking forward to spending more time with you. Thank you for caring so much about us and this sport. I appreciate all the things you've done, are doing, and will do, even when we don't get to see it directly.  ~ Zac",
@@ -659,6 +700,8 @@ const oldLetters = {
         "Bruce!! Thank you so much for your dedication. I am always grateful for your effort and love for this team and everyone on it 💕 ~ Bubbs"
     ],
     "Chris Gurr": [
+        "Congratulations on your new role, I'm so excited to see the heights you'll take us to during this campaign x Alice ~ ",
+        "Thanks 👑 for all the work U put in for the team ~ Kev",
         "Loving your S&C stuff so far! Excited to get more great guidance over the season. ~ Bex",
         "Thank you for stepping up and be our S&C coach ~ ",
         "Loving your work and engagement so far - can't wait to do this season together. ~ Peel",
