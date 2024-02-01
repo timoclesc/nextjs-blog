@@ -23,13 +23,13 @@
 
 .pink {
     background-color: lighten(#ff9ff3, 15%);
-    background: url(/tile_background.png);
+    background-image: url(/tile_background.png);
     border: none;
 }
 
 .fish {
     background-color: #037fb5;
-    background: url(/fish_tile_background.png);
+    background-image: url(/fish_tile_background.png);
     border: none;
     background-attachment: fixed;
 }

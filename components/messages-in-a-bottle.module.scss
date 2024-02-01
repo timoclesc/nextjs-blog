@@ -16,10 +16,11 @@
 }
 
 .container {
-    max-width: 40ch;
+    width: 60ch;
+    max-width: 100%;
     margin: auto;
     padding: 1rem;
-    background: rgba(255, 255, 255, 50%);
+    background: rgba(255, 255, 255, 60%);
 }
 
 .inputRow {
@@ -36,9 +37,12 @@
 
 .letter {
     @extend .letters;
-    padding: 1rem;
     background: ivory;
     margin-block-end: 2rem;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    vertical-align: bottom;
+    white-space: pre-line;
 }
 
 .isLoading {
